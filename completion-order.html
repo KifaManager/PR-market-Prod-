@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Спасибо</title>
+  <link rel="shortcut icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/chosen.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="css/fancybox.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="header__logo">
+            <a class="logo" href="index.html">
+              <img src="images/logo.svg" alt="Logo">
+            </a>
+          </div>
+          <form class="search-form">
+            <input class="search-form__input" name="search-form__input" type="text">
+            <button class="search-form__btn" type="button"></button>
+          </form>
+          <div class="header__buttons">
+            <a class="header__btn registration__btn" href="#">Регистрация</a>
+            <a class="header__btn login__btn" href="#">Вход</a>
+          </div>
+          <div class="shopping__cart">
+            <a class="shopping__cart-link" href="cart.html"></a>
+          </div>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="media-catalog.html">
+                Каталог СМИ
+              </a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="media-catalog-bloggers.html">
+                Каталог блоггеров
+              </a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="media-catalog-publics.html">
+                Каталог пабликов
+              </a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="media-catalog-stars.html">
+                Каталог звезд
+              </a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="services.html">
+                Услуги
+              </a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="blog.html">
+                Блог
+              </a>
+            </li>
+            <div class="header__buttons">
+              <a class="header__btn login__btn" href="#">
+                Вход
+              </a>
+              <a class="header__btn registration__btn" href="#">
+                Регистрация
+              </a>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+
+    <section class="completion">
+      <div class="container">
+        <div class="error404__box completion__box">
+          <div class="error404__box-info">
+            <h2 class="completion__box-title">
+              Спасибо!
+            </h2>
+            <p class="error404__box-text">
+              Наши менеджеры дерутся за Ваш заказ. Когда определится победитель - он с Вами свяжется.
+            </p>
+            <a class="error404__box-link" href="index.html">На главную</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      
+
+
+    </main>
+
+    <div class="popup" id="popupEnter">
+
+
+      <div class="popup-nav">
+        <a class="btn active" href="#form-login">
+          <span>Логин</span>
+        </a>
+        <a class="btn" href="#form-register">
+          <span>Регистрация</span>
+        </a>
+      </div>
+
+      <div class="popup-form active" id="form-login">
+        <form novalidate>
+          <label class="form-label">
+            <span class="form-caption">E-mail*</span>
+            <input class="form-input" type="email" placeholder="E-mail" required>
+            <span class="form-error">Ошибка</span>
+          </label>
+          <label class="form-label">
+            <span class="form-caption">Пароль*</span>
+            <input class="form-input" type="password" name="password" placeholder="Пароль" required>
+            <span class="form-error">Ошибка</span>
+            <span class="form-link" id="forgot-password">Забыли пароль?</span>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="btn">
+              <span>Авторизация</span>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="popup-form" id="form-register">
+        <form novalidate>
+          <div class="form-group">
+            <label class="form-label">
+              <span class="form-caption">Имя*</span>
+              <input class="form-input" type="text" placeholder="Имя" name="name" required>
+              <span class="form-error">Ошибка</span>
+            </label>
+            <label class="form-label">
+              <span class="form-caption">Фамилия*</span>
+              <input class="form-input" type="text" placeholder="Фамилия" name="surname" required>
+              <span class="form-error">Ошибка</span>
+            </label>
+          </div>
+          <label class="form-label">
+            <span class="form-caption">E-mail*</span>
+            <input class="form-input" type="email" placeholder="E-mail" required>
+            <span class="form-error">Ошибка</span>
+          </label>
+          <label class="form-label">
+            <span class="form-caption">Пароль*</span>
+            <input class="form-input" type="password" name="password" placeholder="Пароль" required>
+            <span class="form-error">Ошибка</span>
+          </label>
+          <label class="form-confirm">
+            <input type="checkbox" name="agree" required>
+            <i class="form-checkbox"></i>
+            <span class="form-text">Регистрируясь, я соглашаюсь с <a target="_blank">Пользовательским
+                соглашением</a></span>
+          </label>
+          <div class="form-actions">
+            <button type="submit" class="btn">
+              <span>Регистрация</span>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="popup-form" id="form-password">
+        <!-- Для успешной отправки формы нужно добавить класс .success в .popup-form -->
+        <form novalidate>
+          <div class="form-before">
+            <p class="form-text password-text">Укажите e-mail, указанный Вами при регистрации
+              и мы сразу Вам вышлем письмо с новым паролем</p>
+            <label class="form-label">
+              <span class="form-caption">E-mail*</span>
+              <input class="form-input" type="email" placeholder="E-mail" required>
+              <span class="form-error">Ошибка</span>
+              <span class="form-link" id="remember-password">Я вспомнил пароль</span>
+            </label>
+            <div class="form-actions">
+              <button type="submit" class="btn">
+                <span>Получить пароль</span>
+              </button>
+            </div>
+          </div>
+          <div class="form-after">
+            <p class="form-text success-text">Вам было отправлено электронное письмо с инструкциями по созданию нового
+              пароля на адрес: </p>
+          </div>
+        </form>
+      </div>
+
+      <div class="popup-social">
+        <h3 class="popup-social-title">
+          <span>Или войти с помощью</span>
+        </h3>
+        <div class="popup-social-actions">
+          <a href="" class="btn btn-social btn-facebook" target="_blank">
+            <span class="icon">
+              <img src="images/icons/ic-facebook.svg" alt="">
+            </span>
+            <span>Facebook</span>
+          </a>
+          <a href="" class="btn btn-social btn-google" target="_blank">
+            <span class="icon">
+              <img src="images/icons/ic-google.svg" alt="">
+            </span>
+            <span>Google</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="totop-btn btn"></button>
+
+  </div>
+
+
+  <script src="js/libs/libs.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/libs/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/libs/chosen.jquery.js"></script>
+  <script src="js/libs/fancybox.js"></script>
+  <script src="js/script.min.js"></script>
+
+</body>
+
+</html>
